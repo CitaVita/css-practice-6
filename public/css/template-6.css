@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
 :root {
     --space-s: 8px;
     --space-m: 12px;
@@ -28,6 +32,14 @@
 
 
 /* ================== */
+
+.body {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
 .page {
     background: var(--color-white);
@@ -288,18 +300,17 @@ justify-content: space-between;
 }
 
 .updates_list {
-    align-items: flex-start;
+   display: flex;
+   gap: 10px;
    
 }
 
-
-.updates_list > div {
-  
-   
-   
-}
 
 .square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8px;
     width: 32px;
     height: 32px;
     background-color: pink;
@@ -312,6 +323,12 @@ justify-content: space-between;
   .violet {
     background-color: violet;
   }
+
+.update_card {
+    
+}
+
+
 
 .list_nickname {
     color: #6C757D;
@@ -331,13 +348,6 @@ justify-content: space-between;
     padding-bottom: 12px;
     border-bottom: 1px solid #d3dee9;
 }
-
-
-
-
-
-
-
 
 
 .show_all_link {
@@ -370,9 +380,7 @@ justify-content: space-between;
     gap: 24px;
 
     background-color: #F8F9FA;
-
-   
-    
+    position: relative; 
 
 }
 
@@ -388,14 +396,17 @@ justify-content: space-between;
 
 .badge_hot {
     background-color: #FF7347;
+    
     color: #FFFFFF;
-    height: 120px;
-    width: 160px;
     border-radius: 70px;
     font-size: 24px;
     align-self: center;
     
-
+    padding: 10px 20px;
+    transform: rotate(30deg);
+    position: absolute;
+    top: -15px;
+    right: -15px;
 }
 
 .list {

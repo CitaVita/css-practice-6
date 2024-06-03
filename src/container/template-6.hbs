@@ -1,16 +1,11 @@
-
-   
-    <header class="page_block">
-        <div class="header row g-0">
-            <div class="col-3">
-           {{> logo}}
-            </div>
-            <nav class="header_nav col-6">
+<header class="page_block">
+        <div class="header">
+             {{> logo}}
                 <div class="header_nav_right">
                    
                 {{> nav list=header }}
                 </div>
-           </nav> 
+           
         </div>
          {{!-- {{> divider }} --}}
     </header>  
@@ -52,11 +47,11 @@
   
         {{#each list}}
             <div class="updates_list">
-               <div class="square {{#if @first}}blue{{/if}}{{#if @last}}violet{{/if}}"></div>
-                
-                <strong class="list_nickname">{{nickname}}</strong>
-                <p class="list_desctiption">{{description}}</p>
-
+               <div class="square {{#if @first}}blue{{/if}}{{#if @last}}violet{{/if}}">32x32</div>
+                 <div>
+                  <strong class="list_nickname">@{{nickname}}</strong>
+                  <p class="list_desctiption">{{description}}</p>
+                </div>
                 
             </div>
         {{/each}} 
@@ -74,10 +69,10 @@
 
 <div class="card_expirience">
     {{#with expirience}}
-    <div class="card_title">
+   
         <h3 class="expirience_title">{{title}}</h3>
         <span class="badge_hot">{{badge}}</span>
-    </div>
+   
         <div class="list">
             {{#each list}}
                 <div class="card_list">
