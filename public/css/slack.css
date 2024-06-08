@@ -148,15 +148,19 @@ body {
         border-radius: var(--radius-1);
         text-align: center;
         border: 1px solid transparent;
-        transition: opasity var(--transition-1)
+        
     }
 
-    .button:hover {
+    .click {
+        transition: opasity var(--transition-1);
+    }
+
+    .click:hover {
         opacity: var(--opacity-1);
         cursor: pointer;
     }
 
-    .button:active {
+    .click:active {
         opacity: var(--opasity-2);
     }
 }
@@ -198,12 +202,42 @@ body {
     font-size: var(--size-2);
 }
 
+.feat_card {
+    display: grid;
+    padding: var(--spacing-3);
+    background-color: var(--color-white);
+    gap: var(--spacing-3);
+}
+
 @layer component {
     .icon {
         display: block;
-        height: 48px;
-        width: 48px;
         background-repeat: no-repeat;
         background-position: center center;
         }
+}
+
+@layer variant {
+    .feat_icon {
+        height: 48px;
+        width: 48px;
+    }
+
+    .icon_arrow {
+        height: 14px;
+        width: 24px;
+        background-image: url('/svg/arrow-right.svg');
+    }
+}
+
+.feat_link {
+    justify-self: flex-end;
+
+}
+
+.features_grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
