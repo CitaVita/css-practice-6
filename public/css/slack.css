@@ -361,6 +361,7 @@ body {
         color: var(--color-black);
         position: relative; 
         left: 760px;
+        text-wrap: wrap;
      
        
     }
@@ -409,6 +410,55 @@ body {
     }
    
 
+    .page_section_deliveroo {
+        padding-top: 72px;
+        padding-bottom: 150px;
+        gap: var(--spacing-5);
+        display: grid;
+        background-color: var(--color-white); 
+    }
 
+    .deliveroo_section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+        min-height: 680px; 
 
+}
 
+    .deliveroo {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        align-content: center; 
+}
+
+    .deliveroo_content {
+        display: grid;
+        max-width: 100%;
+        color: var(--color-black);
+        position: relative; 
+        left: 640px;
+        text-wrap: wrap;
+     
+    }
+    .title_deliveroo {
+        font-size: 28px;
+}
+    .deliveroo_image {
+        position: static;
+       
+    }
+
+    .description_deliveroo {
+        font-size: var(--spacing-3);
+        max-width: 520px;
+
+    }
+    .bicycle_image {
+        position: relative;
+        right: 700px;
+        height: 228px;
+        width: 560px;
+    }
