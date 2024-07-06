@@ -6,6 +6,10 @@
     src: url('/font/HelveticaNeueBold.ttf');
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
 
 @layer component {
     .page_section {
@@ -309,11 +313,72 @@ body {
         background: none;
     }
 }
+
+
+  @media all and (1260px <= width) {
+        .page_content {
+            max-width: var(--page-width-big);
+    }
+
+    }
+    
+    @media all and (width < 600px) {
+        .features_grid_4  {
+            grid-template-columns: 2fr, 2fr;
+        }
+    }
+
+    @media all and (width < 400px) {
+        .features_grid_4  {
+            grid-template-columns: 1fr;
+        }
+
+        .hero_buttons {
+            grid-template-columns: 1fr;
+            gap: var(--spacing-2);
+        } 
+    }
+
+
+    
+    @media all and (1000px <= width < 1200px) {
+        .page_content {
+            max-width: var(--page-width-medium);
+    }
+
+        .explore_grid_3 {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    
+    y
+    @media all and (width < 1000px) {
+        .page_content {
+            max-width: var(--page-width-small);
+    }
 }
 
 
+@media all and (width < 600px) {
+    .feature_grid_3 {
+        grid-template-columns: 2fr, 1fr;
+    }
 
+    .explore_grid_3 {
+        display: flex;
+        flex-direction: column;
+    }
+}
 
+@media all and (width < 400px) {
+    .feature_grid_3 {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+}
 
 @layer main {
 
@@ -328,6 +393,7 @@ body {
         background-repeat: no-repeat; 
         background-position: 890px 10px;
         position: static;
+        width: 100%;
     } 
     .apps_section {
         display: flex;
@@ -352,8 +418,8 @@ body {
     .slack_image {
         position: relative;
         right: 518px;
-        height: 500px;
-        width: 600px;
+        max-height: 500px;
+        max-width: 600px;
         
        
     }
