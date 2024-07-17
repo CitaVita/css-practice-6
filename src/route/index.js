@@ -1013,3 +1013,16 @@ router.get('/template-6', function (req, res) {
 
 // Підключаємо роутер до бек-енду
 module.exports = router
+
+
+
+//              ↙ тут вводимо шлях (PATH) до сторінки
+router.get('/dashboard', function (req, res) {
+  //             ↙ cюди вводимо назву файлу з сontainer
+  res.render('dashboard', {
+    layout: null,
+    // ↙ сюди вводимо JSON дані
+  })
+})
+
+// ================================================================
