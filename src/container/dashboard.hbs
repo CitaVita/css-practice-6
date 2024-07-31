@@ -111,66 +111,137 @@
             <div class="analytic"> 4 tlus</div>
         </section>
     </div>
-<div class="layout puchase__content">
+<div class="layout purchase__content">
     <section class="box text--heading purchase__block">
-        <div calss="purchase__list">Purchase list
-        <div class="list__divider"><hr></div>
-        </div>
+        <div class="text--heading list__divider">Purchase list<hr></div>
             <div class="id">
-                <div class="id__list vertical--medium text text--small">
+                <div class=" vertical--medium text text--small">
                     <div>ID437661</div>
                     <div>May 11, 2023, 14:21</div>
                 </div>
 
-                <div class="id__list vertical--medium text text--small">
+                <div class="vertical--medium text text--small">
                     <div>AirOn ProCam</div>
                     <div>7/8 USB Type-C</div>
                 </div>
 
-                <div class="id__list vertical--medium text text--small">
+                <div class="vertical--medium text text--small">
                     <div>132.32 EUR</div>
-                    <div class="text--warning">Not paid</div>
+                     <div class="text--warning">Not paid</div>
                 </div>
 
-                <div class="id__list vertical--medium text text--small">
+                <div class="vertical--medium text text--small">
                     <div>Customer</div>
                     <div>robin@com.de</div>
                 </div>
+            </div>
             
-        <div class="list__divider"><hr></div>
-</div>
+            <div class="list__divider"><hr></div>
+
          <div class="id">
-                <div class="id__list vertical--medium text text--small">
+                <div class="vertical--medium text text--small">
                     <div>ID437661</div>
                     <div>May 11, 2023, 14:21</div>
                 </div>
 
-                <div class="id__list vertical--medium text text--small">
+                <div class="vertical--medium text text--small">
                     <div>PHILIPS Essential</div>
                     <div>HD9200/90</div>
                 </div>
 
-                <div class="id__list vertical--medium text text--small">
+                <div class="vertical--medium text text--small">
                     <div>543 USD</div>
                     <div class="text--success">Pay by  Stripe</div>
                 </div>
 
-                <div class="id__list vertical--medium text text--small">
+                <div class="vertical--medium text text--small">
                     <div>Customer</div>
                     <div>dima@com.ua</div>
                 </div>
             </div>
     </section>
+<div class="layout "></div>
+    <section class="box text--heading payment__block"> 
+        <div class="text--heading payment__divider">Payment list<hr></div>
 
-    <section class="box text--heading payment__block">
-        <div calss="payment__list">Purchase list
-        <div class="payment__divider"><hr></div>
-</div>
-    </section>
-</div>
-</main>
-</div>
-</body>
+<div class="whole__block ">
+            <div class="radio__group  text text--small ">
+                 <label class="radio click radio--1">
+                    <input type="radio" value="Credit card" name="payment type">
+                     Credit card
+                     <span></span>
+                 </label>
+
+                 <label class="radio click">
+                    <input type="radio" value="Debit card" name="payment type">
+                    Debit card
+                    <span></span>
+                 </label>
+
+                <label class="radio click">
+                    <input type="radio" value="PayPal" name="payment type">
+                    PayPal
+                    <span></span>
+                </label>
+             </div>
+    </section>             
+                
+<section class="forms__content field--select">
+     <div class="forms relative">
+         <div class="text text--small">Name on card</div>
+         <input type="text"  class="text field click">
+    </div>
+
+     <div class="forms relative">
+         <div class="text text--small">Credit card number</div>
+         <input type="text"  class="text field click">
+    </div>
+
+        <div class="forms relative">
+         <div class="text text--small">Expiration</div>
+         <input type="text"  class="text field click">
+    </div>
+
+     <div class="forms relative">
+         <div class="text text--small">CVV</div>
+         <input type="text"  class="text field click">
+    </div>
+    <div class="text--heading payment__divider"><hr></div>
+
+    <div class="forms relative">
+        <div class="text text--small">State</div>
+            <div class="field field--select">
+                <span class="text">Choose...</span>
+                 <select class="field__select">
+                    <option value="Remove">Otawa</option>
+                    <option value="Remove">Uta</option>
+                    <option value="Remove">washington</option>
+                </select>
+                <span class="icon main__icon-selector icon--button click"
+                style="background-image: url('/svg/main/selector.svg')"></span>
+           </div>
+        </div>
+
+    <div class="forms relative">
+        <div class="text text--small">Country</div>
+           <div class="field field--select">
+                <span class="text">Choose...</span>
+                 <select class="field__select">
+                    <option value="Remove">Remove</option>
+                    <option value="Remove">Refund</option>
+                    <option value="Remove">Order</option>
+                </select>
+                 <span class="icon main__icon-selector icon--button click"
+                    style="background-image: url('/svg/main/selector.svg')"></span>
+            </div>
+         </div>
+         </div>
+</section>
+    </div>
+        </div>
+            </main>
+        </div>
+    </body>
 </html>
 
 
