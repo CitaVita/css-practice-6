@@ -397,7 +397,7 @@ body {
 
 
     .radio__group {
-        display: flex;
+        display: block;
         align-items: flex-start;
         flex-direction: column;
         margin: 0, auto;
@@ -406,13 +406,18 @@ body {
     }
 
     .forms__content {
-        display: flex;
+        display: block;
+        justify-content: center;
+        align-items: center;
+     
         gap: var(--size-4);
     }
 
     .whole__block {
         display: flex;
-        flex-direction: column;
+        align-content: center;
+        align-items: flex-start;
+  
        
         
 
